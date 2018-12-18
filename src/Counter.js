@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { compose } from "redux";
 import CurrentCount from "./CurrentCount";
 import CounterContext from "./CounterContext";
 
@@ -18,5 +20,9 @@ function Counter() {
 }
 
 
+const enhance = compose(
+  React.memo,
+  connect(() => ({})),
+);
 
-export default Counter;
+export default enhance(Counter);
