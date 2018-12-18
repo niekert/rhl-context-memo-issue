@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { hot } from 'react-hot-loader/root';
+import { hot } from 'react-hot-loader';
 import Counter from './Counter';
 import './App.css';
 
@@ -15,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default hot(App);
+export default hot(module)(App);

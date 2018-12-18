@@ -4,7 +4,7 @@ import CounterContext from "./CounterContext";
 import withContext from "./withContext";
 
 function CurrentCount({count}) {
-  return <div>Current count is {count}. (change me for hottt reloads)</div>;
+  return <div>Current count is {count}. (change me for hot reload issues)</div>;
 }
 
 const enhance = compose(
